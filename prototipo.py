@@ -29,9 +29,21 @@ def dibujarTablero(tablero):
     for i in tablero:
         print(i)
 
+def detectarError(secuencia):
+    for x in secuencia:
+        if x > 7 or x < 1:
+            return -1
+    else:
+        return 0
+
 secuencia = [1, 2, 3, 1]
-dibujarTablero(
-    completarTableroEnOrden(
-        secuencia, tableroVacio()
+
+error = detectarError(secuencia)
+if error == 0:
+    dibujarTablero(
+        completarTableroEnOrden(
+            secuencia, tableroVacio()
+        )
     )
-)
+else:
+    print("la secuencia fue ingresada erroneamente...")
