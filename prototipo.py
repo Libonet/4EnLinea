@@ -16,6 +16,10 @@ def contenidoColumna(nro_columna, tablero):
         columna.append(celda)
     return columna
 
+def contenidoFila(nro_fila, tablero):
+    fila = tablero[6-nro_fila]
+    return fila
+
 def soltarFichaEnColumna(ficha, columna, tablero):
     for fila in range(6, 0, -1):
         if tablero[fila-1][columna-1] == 0:
@@ -51,5 +55,10 @@ if detectarError(secuencia):
 else:
     print("la secuencia fue ingresada erroneamente...")
 
-resultado = "El contenido de la columna es {}"
-print(resultado.format(contenidoColumna(2, tablero)))
+buscarColumna = 2
+resultado = "\nEl contenido de la columna {} es {}"
+print(resultado.format(buscarColumna, contenidoColumna(buscarColumna, tablero)))
+
+buscarFila = 1
+resultado = "\nEl contenido de la fila {} es {}"
+print(resultado.format(buscarFila, contenidoFila(buscarFila, tablero)))
