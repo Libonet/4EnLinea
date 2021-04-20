@@ -83,5 +83,5 @@ print("\nEl contenido de las columnas es")
 print(tableroColumnas)
 
 tableroFilas = filas(tablero)
-print("\El contenido de las filas es")
+print("\nEl contenido de las filas es")
 print(tableroFilas)
