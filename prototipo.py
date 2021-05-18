@@ -52,8 +52,16 @@ def completarTableroEnOrden(secuencia, tablero):
     return tablero
 
 def dibujarTablero(tablero):
-    for i in tablero:
-        print(i)
+    for fila in tablero:
+        print("| ", end = '')
+        for n in fila:
+            if (n==0):
+                print("   ", end = '')
+            else:
+                print(n, " ", end = '')
+        print("|")
+    print("+----------------------+")
+
 
 def detectarError(secuencia):
     for columna in secuencia:
@@ -70,18 +78,18 @@ if detectarError(secuencia):
 else:
     print("la secuencia fue ingresada erroneamente...")
 
-buscarColumna = 2
-resultado = "\nEl contenido de la columna {} es {}"
-print(resultado.format(buscarColumna, contenidoColumna(buscarColumna, tablero)))
+# buscarColumna = 2
+# resultado = "\nEl contenido de la columna {} es {}"
+# print(resultado.format(buscarColumna, contenidoColumna(buscarColumna, tablero)))
 
-buscarFila = 1
-resultado = "\nEl contenido de la fila {} es {}"
-print(resultado.format(buscarFila, contenidoFila(buscarFila, tablero)))
+# buscarFila = 1
+# resultado = "\nEl contenido de la fila {} es {}"
+# print(resultado.format(buscarFila, contenidoFila(buscarFila, tablero)))
 
-tableroColumnas = columnas(tablero)
-print("\nEl contenido de las columnas es")
-print(tableroColumnas)
+# tableroColumnas = columnas(tablero)
+# print("\nEl contenido de las columnas es")
+# print(tableroColumnas)
 
-tableroFilas = filas(tablero)
-print("\nEl contenido de las filas es")
-print(tableroFilas)
+# tableroFilas = filas(tablero)
+# print("\nEl contenido de las filas es")
+# print(tableroFilas)
