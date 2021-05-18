@@ -85,3 +85,5 @@ print(tableroColumnas)
 tableroFilas = filas(tablero)
 print("\nEl contenido de las filas es")
 print(tableroFilas)
+
+print("Esto es una prueba de la funcionalidad de las branches y cómo resolver conflictos en el merge")
