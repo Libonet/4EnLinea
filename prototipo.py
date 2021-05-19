@@ -69,7 +69,10 @@ def detectarError(secuencia):
             return False
     return True
 
-secuencia = [1, 2, 3, 1]
+secuencia_texto = input("Ingrese la secuencia de numeros: ")
+secuencia = []
+for items in secuencia_texto.split(','):
+    secuencia.append(int(items))
 
 tablero = []
 if detectarError(secuencia):
