@@ -22,7 +22,7 @@ def contenidoFila(nro_fila, tablero):
 
 def columnas(tablero):
     tableroVacio = []
-    for nro_columna in range(1,7):
+    for nro_columna in range(1,8):
         columna = contenidoColumna(nro_columna, tablero)
         tableroVacio.append(columna)
     return tableroVacio
@@ -45,10 +45,7 @@ def completarTableroEnOrden(secuencia, tablero):
     ficha = 1
     for columna in secuencia:
         soltarFichaEnColumna(ficha, columna, tablero)
-        if ficha == 1:
-            ficha = 2
-        else:
-            ficha = 1
+        ficha = (ficha % 2)+1
     return tablero
 
 def dibujarTablero(tablero):
@@ -69,10 +66,10 @@ def detectarError(secuencia):
             return False
     return True
 
-secuencia_texto = input("Ingrese la secuencia de numeros: ")
-secuencia = []
-for items in secuencia_texto.split(','):
-    secuencia.append(int(items))
+# secuencia_texto = input("Ingrese la secuencia de numeros: ")
+secuencia = [1,2,3,4,1,1,2]
+# for items in secuencia_texto.split(','):
+#     secuencia.append(int(items))
 
 tablero = []
 if detectarError(secuencia):
