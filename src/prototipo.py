@@ -76,7 +76,7 @@ if detectarError(secuencia):
     tablero = completarTableroEnOrden(secuencia, tableroVacio())
     dibujarTablero(tablero)
 else:
-    print("la secuencia fue ingresada erroneamente...")
+    print("la secuencia fue ingresada erroneamente...") # pragma: no cover
 
 # buscarColumna = 2
 # resultado = "\nEl contenido de la columna {} es {}"
