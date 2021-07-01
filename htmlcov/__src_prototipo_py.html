@@ -22,10 +22,10 @@
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            53 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">53 run</button>
+            44 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">44 run</button>
             <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">0 missing</button>
-            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">1 excluded</button>
+            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">11 excluded</button>
         </h2>
     </div>
 </div>
@@ -93,7 +93,7 @@
     <p id="t39" class="run"><span class="n"><a href="#t39">39</a></span><span class="t">    <span class="key">for</span> <span class="nam">fila</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">6</span><span class="op">,</span> <span class="num">0</span><span class="op">,</span> <span class="op">-</span><span class="num">1</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t40" class="run"><span class="n"><a href="#t40">40</a></span><span class="t">        <span class="key">if</span> <span class="nam">tablero</span><span class="op">[</span><span class="nam">fila</span><span class="op">-</span><span class="num">1</span><span class="op">]</span><span class="op">[</span><span class="nam">columna</span><span class="op">-</span><span class="num">1</span><span class="op">]</span> <span class="op">==</span> <span class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t41" class="run"><span class="n"><a href="#t41">41</a></span><span class="t">            <span class="nam">tablero</span><span class="op">[</span><span class="nam">fila</span><span class="op">-</span><span class="num">1</span><span class="op">]</span><span class="op">[</span><span class="nam">columna</span><span class="op">-</span><span class="num">1</span><span class="op">]</span> <span class="op">=</span> <span class="nam">ficha</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t42" class="run"><span class="n"><a href="#t42">42</a></span><span class="t">            <span class="key">return</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t42" class="run"><span class="n"><a href="#t42">42</a></span><span class="t">            <span class="key">return</span> <span class="com"># nunca sacar este return ni mover (es un break)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t43" class="pln"><span class="n"><a href="#t43">43</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t44" class="run"><span class="n"><a href="#t44">44</a></span><span class="t"><span class="key">def</span> <span class="nam">completarTableroEnOrden</span><span class="op">(</span><span class="nam">secuencia</span><span class="op">,</span> <span class="nam">tablero</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t45" class="run"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="nam">ficha</span> <span class="op">=</span> <span class="num">1</span>&nbsp;</span><span class="r"></span></p>
@@ -102,16 +102,16 @@
     <p id="t48" class="run"><span class="n"><a href="#t48">48</a></span><span class="t">        <span class="nam">ficha</span> <span class="op">=</span> <span class="op">(</span><span class="nam">ficha</span> <span class="op">%</span> <span class="num">2</span><span class="op">)</span><span class="op">+</span><span class="num">1</span>&nbsp;</span><span class="r"></span></p>
     <p id="t49" class="run"><span class="n"><a href="#t49">49</a></span><span class="t">    <span class="key">return</span> <span class="nam">tablero</span>&nbsp;</span><span class="r"></span></p>
     <p id="t50" class="pln"><span class="n"><a href="#t50">50</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t51" class="run"><span class="n"><a href="#t51">51</a></span><span class="t"><span class="key">def</span> <span class="nam">dibujarTablero</span><span class="op">(</span><span class="nam">tablero</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t52" class="run"><span class="n"><a href="#t52">52</a></span><span class="t">    <span class="key">for</span> <span class="nam">fila</span> <span class="key">in</span> <span class="nam">tablero</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"| "</span><span class="op">,</span> <span class="nam">end</span> <span class="op">=</span> <span class="str">''</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="key">for</span> <span class="nam">n</span> <span class="key">in</span> <span class="nam">fila</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t55" class="run"><span class="n"><a href="#t55">55</a></span><span class="t">            <span class="key">if</span> <span class="op">(</span><span class="nam">n</span><span class="op">==</span><span class="num">0</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">                <span class="nam">print</span><span class="op">(</span><span class="str">"   "</span><span class="op">,</span> <span class="nam">end</span> <span class="op">=</span> <span class="str">''</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">            <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t">                <span class="nam">print</span><span class="op">(</span><span class="nam">n</span><span class="op">,</span> <span class="str">" "</span><span class="op">,</span> <span class="nam">end</span> <span class="op">=</span> <span class="str">''</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"|"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t60" class="run"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="nam">print</span><span class="op">(</span><span class="str">"+----------------------+"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t51" class="exc show_exc"><span class="n"><a href="#t51">51</a></span><span class="t"><span class="key">def</span> <span class="nam">dibujarTablero</span><span class="op">(</span><span class="nam">tablero</span><span class="op">)</span><span class="op">:</span> <span class="com"># pragma: no cover</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t52" class="exc show_exc"><span class="n"><a href="#t52">52</a></span><span class="t">    <span class="key">for</span> <span class="nam">fila</span> <span class="key">in</span> <span class="nam">tablero</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t53" class="exc show_exc"><span class="n"><a href="#t53">53</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"| "</span><span class="op">,</span> <span class="nam">end</span> <span class="op">=</span> <span class="str">''</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t54" class="exc show_exc"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="key">for</span> <span class="nam">n</span> <span class="key">in</span> <span class="nam">fila</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t55" class="exc show_exc"><span class="n"><a href="#t55">55</a></span><span class="t">            <span class="key">if</span> <span class="op">(</span><span class="nam">n</span><span class="op">==</span><span class="num">0</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t56" class="exc show_exc"><span class="n"><a href="#t56">56</a></span><span class="t">                <span class="nam">print</span><span class="op">(</span><span class="str">"   "</span><span class="op">,</span> <span class="nam">end</span> <span class="op">=</span> <span class="str">''</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t57" class="exc show_exc"><span class="n"><a href="#t57">57</a></span><span class="t">            <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="exc show_exc"><span class="n"><a href="#t58">58</a></span><span class="t">                <span class="nam">print</span><span class="op">(</span><span class="nam">n</span><span class="op">,</span> <span class="str">" "</span><span class="op">,</span> <span class="nam">end</span> <span class="op">=</span> <span class="str">''</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="exc show_exc"><span class="n"><a href="#t59">59</a></span><span class="t">        <span class="nam">print</span><span class="op">(</span><span class="str">"|"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="exc show_exc"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="nam">print</span><span class="op">(</span><span class="str">"+----------------------+"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t61" class="pln"><span class="n"><a href="#t61">61</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="pln"><span class="n"><a href="#t62">62</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t63" class="run"><span class="n"><a href="#t63">63</a></span><span class="t"><span class="key">def</span> <span class="nam">detectarError</span><span class="op">(</span><span class="nam">secuencia</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -153,7 +153,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-06-18 11:58 -0300
+            created at 2021-07-01 19:06 -0300
         </p>
     </div>
 </div>

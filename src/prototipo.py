@@ -39,7 +39,7 @@ def soltarFichaEnColumna(ficha, columna, tablero):
     for fila in range(6, 0, -1):
         if tablero[fila-1][columna-1] == 0:
             tablero[fila-1][columna-1] = ficha
-            return
+            return # nunca sacar este return ni mover (es un break)
 
 def completarTableroEnOrden(secuencia, tablero):
     ficha = 1
@@ -48,7 +48,7 @@ def completarTableroEnOrden(secuencia, tablero):
         ficha = (ficha % 2)+1
     return tablero
 
-def dibujarTablero(tablero):
+def dibujarTablero(tablero): # pragma: no cover
     for fila in tablero:
         print("| ", end = '')
         for n in fila:

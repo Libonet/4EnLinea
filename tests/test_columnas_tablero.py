@@ -20,12 +20,3 @@ def test_columnas():
             [0,0,0,0,0,0],
             [0,0,0,0,0,0],
             [0,0,0,0,0,0]] == columnas(tablero_ejemplo)
-
-def test_columnas_falso():
-    assert [[0,1,1,1,0,0],
-            [0,0,2,2,0,0],
-            [1,1,2,2,1,2],
-            [0,0,0,0,0,1],
-            [0,0,2,1,1,0],
-            [0,0,0,0,0,0],
-            [0,0,0,0,0,0]] != columnas(tablero_ejemplo)
